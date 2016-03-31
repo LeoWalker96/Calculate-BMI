@@ -1,0 +1,20 @@
+# Calculate-BMI
+import java.util.Scanner;
+public class CalculateBMI {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       
+        double weight;
+        double height;
+        double BMI;
+ 
+        System.out.println("Enter your weight in pounds: ");
+        weight = input. nextDouble();
+  
+        System.out.println("Enter your height in inches: ");
+        height = input.nextDouble();
+
+        BMI = ((weight * 703)/(height * height));
+        System.out.println("Your BMI is " + BMI);
+     }
+}
